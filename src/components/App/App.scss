@@ -1,0 +1,62 @@
+body, html {
+  padding: 0;
+  margin: 0;
+}
+
+.app-root {
+  text-align: center;
+}
+
+.app-header {
+  background-color: #222;
+  padding: 10px;
+  color: white;
+  font-size: 15pt;
+  text-align: center;
+  transition:all .5s;
+}
+
+.app-input {
+  line-height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 0 8px;
+  color: #666;
+  width: 400px;
+  margin-bottom: 30px;
+
+}
+
+@media (max-width:850px){
+  .app-input{
+    width:200px;
+  }
+}
+
+.app-header-input{
+  display:flex;
+  justify-content: space-around;
+
+  &_sides{ 
+    text-align: center;
+  }
+}
+
+@media (max-width:450px){
+  .app-input{
+    width:150px;
+  }
+}
+
+@media (max-width:350px){
+  .app-header-input{
+    flex-direction: column;
+  }
+}
+
+.gallary-div{
+  display:block;
+  margin-top: 100px;
+}
+
